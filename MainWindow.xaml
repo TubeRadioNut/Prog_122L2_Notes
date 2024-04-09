@@ -40,27 +40,34 @@
             x:Name="txtnum1"
             Canvas.Left="211"
             TextWrapping="Wrap"
-            Text="TextBox"
+            Text="num1"
             Canvas.Top="242"
             Width="120" />
         <TextBox
             x:Name="txtnum2"
             Canvas.Left="463"
             TextWrapping="Wrap"
-            Text="TextBox"
+            Text="num2"
             Canvas.Top="242"
             Width="120" />
-        <Button
-            x:Name="btnAddNumber"
-            Content="Button"
-            Canvas.Left="224"
-            Canvas.Top="319"
-            Click="btnAddNumber_Click_1" />
 
         <!--Button
         TextBox
         Label
         MessageBox-->
+
+        <Button 
+            Content="Add Numbers"
+            Canvas.Left="159"
+            Canvas.Top="313"
+            Click="Button_Click" />
+        <TextBox
+            x:Name="txtLastName"
+            Canvas.Left="483"
+            TextWrapping="Wrap"
+            Text="Milender"
+            Canvas.Top="109"
+            Width="120" />
 
     </Canvas>
 </Window>

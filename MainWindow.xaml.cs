@@ -31,8 +31,9 @@ namespace Prog_122L2_Notes
         private void btnPopUpMessage_Click(object sender, RoutedEventArgs e)
         {
             string userFristName = txtFirstName.Text;
+            string userLastName = txtLastName.Text;
 
-            MessageBox.Show(userFristName);
+            MessageBox.Show(userFristName + " " + userLastName);
         }
 
         private void btnAddNumber_Click(object sender, RoutedEventArgs e)
@@ -45,6 +46,14 @@ namespace Prog_122L2_Notes
 
         }
 
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int a = int.Parse(txtnum1.Text);
+            int b = int.Parse(txtnum2.Text);
+
+            int sum = a + b;
+
+            MessageBox.Show(sum.ToString());
+        }
     }
 }
