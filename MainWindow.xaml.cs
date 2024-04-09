@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿//Charles Milender
+//4-8-2024
+//CSI 122
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -18,7 +21,30 @@ namespace Prog_122L2_Notes
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();//don't delete this
+            
+            string userFirstName = txtFirstName.Text;
+            //Message Box
+            //MessageBox.Show(userFirstName);
         }
+
+        private void btnPopUpMessage_Click(object sender, RoutedEventArgs e)
+        {
+            string userFristName = txtFirstName.Text;
+
+            MessageBox.Show(userFristName);
+        }
+
+        private void btnAddNumber_Click(object sender, RoutedEventArgs e)
+        {
+            int a = int.Parse(txtnum1.Text);
+            int b = int.Parse(txtnum2.Text);
+            int sum = a + b;
+
+            MessageBox.Show(sum.ToString());
+
+        }
+
+       
     }
 }
